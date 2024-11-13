@@ -4,6 +4,7 @@
         text="Explore our diverse range of products designed to drive efficiency, security and growth in <br />your
                 organization."
         :backgroundImageUrl="imageUrl" ></header-section>
+        <services-section></services-section>
         <ways-of-work-section></ways-of-work-section>
         <technology-section></technology-section>
         <lets-talk-section marginTop="-100px"></lets-talk-section>
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import ServicesSection from '@/components/sections/services/ServicesSection.vue';
 import WaysOfWorkSection from '@/components/sections/services/WaysOfWorkSection.vue';
 import TechnologySection from '@/components/sections/common/TechnologySection.vue';
 import LetsTalkSection from '@/components/sections/common/LetsTalkSection.vue';
@@ -18,6 +20,7 @@ import LetsTalkSection from '@/components/sections/common/LetsTalkSection.vue';
 
 export default{
     components: {
+        ServicesSection,
         WaysOfWorkSection,
         TechnologySection,
         LetsTalkSection
