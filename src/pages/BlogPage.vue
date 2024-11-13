@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import FilteredCardsSection from '@/components/sections/FilteredCardsSection.vue';
+import FilteredCardsSection from '@/components/sections/common/FilteredCardsSection.vue';
 
 export default {
     components: {

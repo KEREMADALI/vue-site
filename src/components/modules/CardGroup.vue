@@ -69,7 +69,7 @@ export default {
     margin: 24px 40px;
 }
 
-.cphoto-card-metadata time {
+.photo-card-metadata time {
     font-size: 16px;
     font-weight: 200;
     color: var(--light-grey);

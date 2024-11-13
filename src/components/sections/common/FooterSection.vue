@@ -1,6 +1,6 @@
 <template>
-  <footer id="footer-section">
-    <router-link to="/" class="navigation-logo">
+  <footer>
+    <router-link to="/" id="footer-logo">
       <img src="@/assets/images/common/header/logo.svg" alt="Deep Network">
     </router-link>
     <div id="footer-texts">
@@ -67,7 +67,7 @@ export default {}
 </script>
 
 <style scoped>
-#footer-section {
+footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -81,18 +81,18 @@ export default {}
   font-size: 16px;
 }
 
-#footer-section * {
+footer * {
   font-size: 16px;
   line-height: 1.5;
 }
 
-#footer-section>*:not(:first-child) {
+footer>*:not(:first-child) {
   flex-grow: 1;
 
   margin-right: 20px;
 }
 
-#footer-section>* {
+footer>* {
   margin-bottom: 30px;
 }
 

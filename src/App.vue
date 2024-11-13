@@ -9,6 +9,9 @@ export default {}
 </script>
 
 <style>
+/* Inter Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 :root {
     --darker-blue: #072249;
     --dark-blue: #0062AF;
@@ -25,7 +28,7 @@ export default {}
     margin: 0;
     padding: 0;
 
-    font-family: "Inter", Helvetica, sans-serif;
+    font-family: "Inter", "Times New Roman", sans-serif;
 }
 
 body {
@@ -54,5 +57,17 @@ body {
 
     font-size: 1.1rem;
     font-weight: 200;
+}
+
+/* Card */
+.card {
+  padding: 40px;
+
+  border-radius: 5%;
+
+  background-color: white;
+  box-shadow: 15px 15px 15px var(--shadow-color);
+
+  text-align: left;
 }
 </style>

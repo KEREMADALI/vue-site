@@ -1,10 +1,10 @@
 <template>
     <section :style="cssProps">
         <navigation-bar></navigation-bar>
-        <div class="content">
-            <h1>{{ header }}</h1>
-            <p>{{ text }}</p>
-            <button class="classic-btn" v-show="buttonText != ''">{{ buttonText }}</button>
+        <div class="content central-item large">
+            <h1 v-html="header"></h1>
+            <p v-html="text"></p>
+            <button class="classic-btn" v-if="buttonText != ''">{{ buttonText }}</button>
         </div>
         <div></div>
     </section>

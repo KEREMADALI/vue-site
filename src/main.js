@@ -2,17 +2,17 @@ import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 import App from './App.vue';
-import BlogPage from './pages/BlogPage.vue';
-import CaseStudyPage from './pages/CaseStudyPage.vue';
+import HomePage from './pages/HomePage.vue';
 
-import HeaderSection from './components/sections/HeaderSection.vue';
-import FooterSection from './components/sections/FooterSection.vue';
+import HeaderSection from './components/sections/common/HeaderSection.vue';
+import FooterSection from './components/sections/common/FooterSection.vue';
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        { path: '/blog', component: BlogPage},
-        { path: '/case-studies', component: CaseStudyPage},
+        { path: '/', component: HomePage},
+        { path: '/blog', component: () => import('./pages/BlogPage.vue')},
+        { path: '/case-studies', component: () => import('./pages/CaseStudyPage.vue')},
     ]
 });
 const app = createApp(App);
