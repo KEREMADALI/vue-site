@@ -147,12 +147,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 section {
     display: flex;
     flex-direction: column;
 
-
+    position:relative;
+    top: -150px;
 }
 
 #main-image {
