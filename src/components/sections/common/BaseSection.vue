@@ -1,32 +1,30 @@
 <template>
-    <section>
-        <div class="custom-section central-item">
-            <header v-if="header != ''" v-html="header" ></header>
-            <h1 v-html="secondHeader"></h1>
-            <p v-if="text != ''" v-html="text"></p>
-            <slot></slot>
-        </div>
-    </section>
+  <div class="custom-section">
+    <header v-if="header != ''" v-html="header"></header>
+    <h1 v-html="secondHeader"></h1>
+    <p v-if="text != ''" v-html="text"></p>
+    <slot></slot>
+  </div>
 </template>
 
 <script>
 export default {
-    props: {
-        header: {
-            type: String,
-            required: false,
-            default: ""
-        },
-        secondHeader: {
-            type: String,
-            required: true
-        },
-        text: {
-            type: String,
-            required: false,
-            default: ""
-        },
-    }
+  props: {
+    header: {
+      type: String,
+      required: false,
+      default: ""
+    },
+    secondHeader: {
+      type: String,
+      required: true
+    },
+    text: {
+      type: String,
+      required: false,
+      default: ""
+    },
+  }
 }
 </script>
 
@@ -40,20 +38,23 @@ export default {
   padding-bottom: 5.5rem;
 }
 
-header {
+header,
+:slotted(header) {
   color: var(--dark-blue);
 
   font-weight: bold;
   font-size: 22px;
 }
 
-h1 {
+h1,
+:slotted(h1) {
   font-size: 42px;
 
   margin: 1rem 0;
 }
 
-p {
+p,
+:slotted(p) {
   padding: 1rem 0;
 
   color: var(--text-grey);

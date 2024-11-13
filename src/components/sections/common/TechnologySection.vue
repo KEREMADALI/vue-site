@@ -1,12 +1,12 @@
 <template>
-    <base-section 
-        header="TECHNOLOGY" 
-        secondHeader="Software solutions we are <br />experts in"
-        text="We specialize in delivering robust, high-performance cloud, data, and analytics solutions that drive operational efficiency and strategic growth, leveraging advanced technologies, such as: ">
-        <image-carousel 
-            :images="this.technologyLogos">
-        </image-carousel>
-    </base-section>
+    <section>
+        <base-section header="TECHNOLOGY" secondHeader="Software solutions we are <br />experts in"
+            text="We specialize in delivering robust, high-performance cloud, data, and analytics solutions that drive operational efficiency and strategic growth, leveraging advanced technologies, such as: "
+            class="central-item">
+            <image-carousel :images="this.technologyLogos">
+            </image-carousel>
+        </base-section>
+    </section>
 </template>
 
 <script>

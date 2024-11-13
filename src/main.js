@@ -11,6 +11,7 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         { path: '/', component: HomePage},
+        { path: '/services', component: () => import('./pages/ServicesPage.vue')},
         { path: '/blog', component: () => import('./pages/BlogPage.vue')},
         { path: '/case-studies', component: () => import('./pages/CaseStudyPage.vue')},
     ]

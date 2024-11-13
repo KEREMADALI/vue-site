@@ -1,37 +1,36 @@
 <template>
-    <base-section 
-        header="SERVICES" 
-        secondHeader="Our areas of expertise" 
-        text="From cloud infrastructure and big data, we deliver cutting edge solutions and expert <br/> 
-        training tailored to your needs.">
-        <div id="service-grid">
-            <div class="services-box card">
-                <h1>Cloud <br />Services</h1>
-                <p>Expert cloud solutions tailored to your needs, backend by certified professionals and proven
-                    project success.</p>
-                <a href="">Learn more</a>
+    <section>
+        <base-section header="SERVICES" secondHeader="Our areas of expertise" text="From cloud infrastructure and big data, we deliver cutting edge solutions and expert <br/> 
+        training tailored to your needs." class="central-item">
+            <div id="service-grid">
+                <div class="services-box card">
+                    <h1>Cloud <br />Services</h1>
+                    <p>Expert cloud solutions tailored to your needs, backend by certified professionals and proven
+                        project success.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="services-box card">
+                    <h1>LLM/AI Solutions <br />and LLMOps</h1>
+                    <p>Advanced AI solutions for smarter decisions, automated knowledge management, and a competitive
+                        edge with cutting-edge LLM technology.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="services-box card">
+                    <h1>Big Data <br />Analytics Platform</h1>
+                    <p>Transform your data into insights with scalable analytics, enabling smarter decisions and
+                        real-time analysis.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div class="services-box card">
+                    <h1>Trainings &<br />Workshops</h1>
+                    <p>Expert training designed to enhance your skills and knowledge, led by industry professionals with
+                        proven experience.</p>
+                    <a href="">Learn more</a>
+                </div>
             </div>
-            <div class="services-box card">
-                <h1>LLM/AI Solutions <br/>and LLMOps</h1>
-                <p>Advanced AI solutions for smarter decisions, automated knowledge management, and a competitive
-                    edge with cutting-edge LLM technology.</p>
-                <a href="">Learn more</a>
-            </div>
-            <div class="services-box card">
-                <h1>Big Data <br />Analytics Platform</h1>
-                <p>Transform your data into insights with scalable analytics, enabling smarter decisions and
-                    real-time analysis.</p>
-                <a href="">Learn more</a>
-            </div>
-            <div class="services-box card">
-                <h1>Trainings &<br/>Workshops</h1>
-                <p>Expert training designed to enhance your skills and knowledge, led by industry professionals with
-                    proven experience.</p>
-                <a href="">Learn more</a>
-            </div>
-        </div>
-        <button class="classic-btn">All services</button>
-    </base-section>
+            <button class="classic-btn">All services</button>
+        </base-section>
+    </section>
 </template>
 
 <script>

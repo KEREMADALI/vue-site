@@ -1,48 +1,51 @@
 <template>
-    <base-section header="WHY DEEP NETWORK?"
-        secondHeader="Explore what makes us the ideal technology consulting and solutions partner."
-        text="Here are the six standout reasons that differantiate us </br>from the competition.">
-        <div class="model-grid">
-            <div class="model-box">
-                <div class="image-background">
-                    <img :src="require('@/assets/images/homepage/business-model/1.svg')" alt="">
+    <section>
+        <base-section header="WHY DEEP NETWORK?"
+            secondHeader="Explore what makes us the ideal technology consulting and solutions partner."
+            text="Here are the six standout reasons that differantiate us </br>from the competition."
+            class="central-item">
+            <div class="model-grid">
+                <div class="model-box">
+                    <div class="image-background">
+                        <img :src="require('@/assets/images/homepage/business-model/1.svg')" alt="">
+                    </div>
+                    <p>We are a software company, not an agency that relies on freelance contractors.</p>
                 </div>
-                <p>We are a software company, not an agency that relies on freelance contractors.</p>
-            </div>
-            <div class="model-box">
-                <div class="image-background">
-                    <img :src="require('@/assets/images/homepage/business-model/2.svg')" alt="">
+                <div class="model-box">
+                    <div class="image-background">
+                        <img :src="require('@/assets/images/homepage/business-model/2.svg')" alt="">
+                    </div>
+                    <p>We bring broad experience and offer a "one-stop shop" for all Microsoft Azure projects.</p>
                 </div>
-                <p>We bring broad experience and offer a "one-stop shop" for all Microsoft Azure projects.</p>
-            </div>
-            <div class="model-box">
-                <div class="image-background">
-                    <img :src="require('@/assets/images/homepage/business-model/3.svg')" alt="">
+                <div class="model-box">
+                    <div class="image-background">
+                        <img :src="require('@/assets/images/homepage/business-model/3.svg')" alt="">
+                    </div>
+                    <p>As a MS Gold Partner, our team stays current with the latest Azure technology trends.</p>
                 </div>
-                <p>As a MS Gold Partner, our team stays current with the latest Azure technology trends.</p>
-            </div>
-            <div class="model-box">
-                <div class="image-background">
-                    <img :src="require('@/assets/images/homepage/business-model/4.svg')" alt="">
+                <div class="model-box">
+                    <div class="image-background">
+                        <img :src="require('@/assets/images/homepage/business-model/4.svg')" alt="">
+                    </div>
+                    <p>Whether you need 1 or 20 engineers, we can scale your project quickly and efficiently.</p>
                 </div>
-                <p>Whether you need 1 or 20 engineers, we can scale your project quickly and efficiently.</p>
-            </div>
-            <div class="model-box">
-                <div class="image-background">
-                    <img :src="require('@/assets/images/homepage/business-model/5.svg')" alt="">
+                <div class="model-box">
+                    <div class="image-background">
+                        <img :src="require('@/assets/images/homepage/business-model/5.svg')" alt="">
+                    </div>
+                    <p>Customers can select highly qualified candidates through CVs and conduct interviews before
+                        hiring.</p>
                 </div>
-                <p>Customers can select highly qualified candidates through CVs and conduct interviews before
-                    hiring.</p>
-            </div>
-            <div class="model-box">
-                <div class="image-background">
-                    <img :src="require('@/assets/images/homepage/business-model/6.svg')" alt="">
+                <div class="model-box">
+                    <div class="image-background">
+                        <img :src="require('@/assets/images/homepage/business-model/6.svg')" alt="">
+                    </div>
+                    <p>Immediate access to skilled resources onsite, onshore, or nearshore (EU or Turkey), fully
+                        GDPR-compliant.</p>
                 </div>
-                <p>Immediate access to skilled resources onsite, onshore, or nearshore (EU or Turkey), fully
-                    GDPR-compliant.</p>
             </div>
-        </div>
-    </base-section>
+        </base-section>
+    </section>
 </template>
 
 <script>

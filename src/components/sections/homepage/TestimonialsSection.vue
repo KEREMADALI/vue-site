@@ -1,8 +1,8 @@
 <template>
-    <base-section 
-        header="TESTIMONIALS" 
-        secondHeader="What our clients say <br />about us">
-    </base-section>
+    <section>
+        <base-section header="TESTIMONIALS" secondHeader="What our clients say <br />about us">
+        </base-section>
+    </section>
 </template>
 
 <script>
@@ -17,8 +17,7 @@ export default {
 </script>
 
 <style scoped>
-section{
+section {
     text-align: center;
 }
-
 </style>

@@ -8,7 +8,7 @@
     <technology-section></technology-section>
     <business-model-section></business-model-section>
     <case-studies-section></case-studies-section>
-    <lets-talk-section></lets-talk-section>
+    <lets-talk-section marginTop="-150px"></lets-talk-section>
     <testimonials-section></testimonials-section>
     <footer-section></footer-section>
 </template>

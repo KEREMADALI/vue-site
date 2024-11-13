@@ -1,21 +1,20 @@
 <template>
-    <base-section 
-        header="CASE STUDIES" 
-        secondHeader="Latest insights from our <br/>experts" 
-        text="Stay informed with our recent blogs, covering industry trends, technology tips, and deep
-            dives into cutting-edge solutions.">
-        <div id="case-study-wrapper">
-            <div v-for="caseStudy in caseStudies" :key="caseStudy.header" class="case-study-cell">
-                <img :src="caseStudy.image" loading="lazy" alt="office">
-                <div class="case-study-metadata">
-                    <time datetime="2020-01-01">{{ caseStudy.date }}</time>
-                    <h2>{{ caseStudy.header }}</h2>
-                    <a href="">Read more</a>
+    <section>
+        <base-section header="CASE STUDIES" secondHeader="Latest insights from our <br/>experts" text="Stay informed with our recent blogs, covering industry trends, technology tips, and deep
+            dives into cutting-edge solutions." class="central-item">
+            <div id="case-study-wrapper">
+                <div v-for="caseStudy in caseStudies" :key="caseStudy.header" class="case-study-cell">
+                    <img :src="caseStudy.image" loading="lazy" alt="office">
+                    <div class="case-study-metadata">
+                        <time datetime="2020-01-01">{{ caseStudy.date }}</time>
+                        <h2>{{ caseStudy.header }}</h2>
+                        <a href="">Read more</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <button class="classic-btn">See our case studies</button>
-    </base-section>
+            <button class="classic-btn">See our case studies</button>
+        </base-section>
+    </section>
 </template>
 
 <script>
@@ -57,7 +56,6 @@ section {
     margin-top: 48px;
 
     width: 242px;
-    
     align-self: center;
 }
 
