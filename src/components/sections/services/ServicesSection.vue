@@ -19,9 +19,9 @@
                 <div class="dropdown">
                     <div class="card">
                         <header>Cloud Services</header>
-                        <input type="checkbox" class="dropdown-toggle" @click="update('dropdown1')">
+                        <input type="radio" class="dropdown-toggle" value="cloud" v-model="toggle" @click="update('cloud')">
                     </div>
-                    <ul v-show="dropdown1State" class="dropdown-content">
+                    <ul v-show="toggle === 'cloud'" class="dropdown-content">
                         <li>
                             <img src="@/assets/images/services/icons/check.svg" alt="">
                             <h1>Scalability</h1>
@@ -51,9 +51,9 @@
                 <div class="dropdown">
                     <div class="card">
                         <header>LLM/AI Solutions</header>
-                        <input type="checkbox" class="dropdown-toggle" @click="update('dropdown2')">
+                        <input type="radio" class="dropdown-toggle" value="ai" v-model="toggle" @click="update('ai')">
                     </div>
-                    <ul v-show="dropdown2State" class="dropdown-content">
+                    <ul v-show="toggle === 'ai'" class="dropdown-content">
                         <li>
                             <img src="@/assets/images/services/icons/check.svg" alt="">
                             <h1>Scalability</h1>
@@ -83,14 +83,66 @@
                 <div class="dropdown">
                     <div class="card">
                         <header>Big data analytics platform</header>
-                        <input type="checkbox" class="dropdown-toggle" @click="update('dropdown3')">
+                        <input type="radio" class="dropdown-toggle" value="big-data" v-model="toggle" @click="update('big-data')">
                     </div>
+                    <ul v-show="toggle === 'big-data'" class="dropdown-content">
+                        <li>
+                            <img src="@/assets/images/services/icons/check.svg" alt="">
+                            <h1>Scalability</h1>
+                            <p>Easily scale your resources to match your business needs, ensuring optimal performance
+                                during peak times without overspending during quieter periods.</p>
+                        </li>
+                        <li>
+                            <img src="@/assets/images/services/icons/check.svg" alt="">
+                            <h1>Security</h1>
+                            <p>Our solutions prioritize robust security measures, protecting your data and applications
+                                with advanced encryption, compliance standards, and regular audits.</p>
+                        </li>
+                        <li>
+                            <img src="@/assets/images/services/icons/check.svg" alt="">
+                            <h1>Security</h1>
+                            <p>Tailor our products to fit your unique business requirements, enabling a seamless
+                                integration with your existing systems and workflows.</p>
+                        </li>
+                        <li>
+                            <img src="@/assets/images/services/icons/check.svg" alt="">
+                            <h1>Expert Support</h1>
+                            <p>Benefit from our dedicated support team, offering ongoing assistance, training, and
+                                resources to help you maximize the potential of our solutions.</p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="dropdown">
                     <div class="card">
                         <header>Trainings & Workshops</header>
-                        <input type="checkbox" class="dropdown-toggle" @click="update('dropdown4')">
+                        <input type="radio" class="dropdown-toggle" value="trainings" v-model="toggle" @click="update('trainings')">
                     </div>
+                    <ul v-show="toggle === 'trainings'" class="dropdown-content">
+                        <li>
+                            <img src="@/assets/images/services/icons/check.svg" alt="">
+                            <h1>Scalability</h1>
+                            <p>Easily scale your resources to match your business needs, ensuring optimal performance
+                                during peak times without overspending during quieter periods.</p>
+                        </li>
+                        <li>
+                            <img src="@/assets/images/services/icons/check.svg" alt="">
+                            <h1>Security</h1>
+                            <p>Our solutions prioritize robust security measures, protecting your data and applications
+                                with advanced encryption, compliance standards, and regular audits.</p>
+                        </li>
+                        <li>
+                            <img src="@/assets/images/services/icons/check.svg" alt="">
+                            <h1>Security</h1>
+                            <p>Tailor our products to fit your unique business requirements, enabling a seamless
+                                integration with your existing systems and workflows.</p>
+                        </li>
+                        <li>
+                            <img src="@/assets/images/services/icons/check.svg" alt="">
+                            <h1>Expert Support</h1>
+                            <p>Benefit from our dedicated support team, offering ongoing assistance, training, and
+                                resources to help you maximize the potential of our solutions.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -106,42 +158,17 @@ export default {
     },
     data(){
         return{
-            dropdown1State: false,
-            dropdown2State: false,
-            dropdown3State: false,
-            dropdown4State: false,
+            previouslySelected: null,
+            toggle: null,
         };
     },
     methods: {
-        update(dropdownId){
-            switch(dropdownId){
-                case 'dropdown1':
-                    this.dropdown1State = !this.dropdown1State;
-                    this.dropdown2State = false;
-                    this.dropdown3State = false;
-                    this.dropdown4State = false;
-                    break;
-                case 'dropdown2':
-                    this.dropdown2State = !this.dropdown2State;
-                    this.dropdown1State = false;
-                    this.dropdown3State = false;
-                    this.dropdown4State = false;
-                    break;  
-                case  'dropdown3':
-                    this.dropdown3State = !this.dropdown3State;
-                    this.dropdown1State = false;
-                    this.dropdown2State = false;
-                    this.dropdown4State = false;
-                    break;
-                case 'dropdown4':
-                    this.dropdown4State = !this.dropdown4State;
-                    this.dropdown1State = false;
-                    this.dropdown2State = false;
-                    this.dropdown3State = false;
-                    break;
-                default:
-                    console.log("Missing dropdown id: " + dropdownId);
+        update(val){
+            if(val === this.previouslySelected){
+                this.toggle = null;
             }
+
+            this.previouslySelected = val;
         }
     }
 }
@@ -200,7 +227,7 @@ section {
 }
 
 .dropdown-toggle{
-    appearance: none;
+    /* appearance: none; */
     background-image: url("@/assets/images/services/icons/maximize.svg");
     object-fit: contain;
 
