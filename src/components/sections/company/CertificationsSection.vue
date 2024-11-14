@@ -78,6 +78,10 @@ export default {
 section{
     text-align: center;
 }
+
+#certifications-carousel{
+    align-self: center;
+}
 </style>
 
 <style>
