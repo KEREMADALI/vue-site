@@ -17,6 +17,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
 
+      - name: List items
+        run: ls
+
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
