@@ -15,6 +15,7 @@ const router = createRouter({
         { path: '/company', component: () => import('./pages/CompanyPage.vue')},
         { path: '/blog', component: () => import('./pages/BlogPage.vue')},
         { path: '/case-studies', component: () => import('./pages/CaseStudyPage.vue')},
+        { path: '/:pathMatch(.*)*', redirect: '/' }
     ]
 });
 const app = createApp(App);
