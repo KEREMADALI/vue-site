@@ -12,6 +12,7 @@ const router = createRouter({
     routes: [
         { path: '/', component: HomePage},
         { path: '/services', component: () => import('./pages/ServicesPage.vue')},
+        { path: '/company', component: () => import('./pages/CompanyPage.vue')},
         { path: '/blog', component: () => import('./pages/BlogPage.vue')},
         { path: '/case-studies', component: () => import('./pages/CaseStudyPage.vue')},
     ]
