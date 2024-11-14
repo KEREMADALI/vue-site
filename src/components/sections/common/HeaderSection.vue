@@ -6,7 +6,9 @@
             <p v-html="text"></p>
             <button class="classic-btn" v-if="buttonText != ''">{{ buttonText }}</button>
         </div>
-        <div></div>
+        <slot>
+            <div></div>
+        </slot>
     </section>
 
 </template>
@@ -55,10 +57,12 @@ export default {
 </script>
 
 <style scoped>
+
+
 section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: flex-start; */
     text-align: center;
 
     background-size: cover;
@@ -73,11 +77,17 @@ section {
     width: 100%;
 }
 
+nav{
+    justify-self: flex-start;
+}
+
 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    margin-top: 7%;
 
     color: white;
 
