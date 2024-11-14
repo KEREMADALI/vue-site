@@ -8,7 +8,7 @@ import HeaderSection from './components/sections/common/HeaderSection.vue';
 import FooterSection from './components/sections/common/FooterSection.vue';
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory('vue-site'),
     routes: [
         { path: '/', component: HomePage},
         { path: '/services', component: () => import('./pages/ServicesPage.vue')},
