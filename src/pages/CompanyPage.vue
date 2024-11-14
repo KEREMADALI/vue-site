@@ -7,6 +7,7 @@
         <our-team-section></our-team-section>
         <timeline-section></timeline-section>
         <career-section></career-section>
+        <footer-section></footer-section>
 </template>
 
 <script>
